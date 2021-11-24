@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-app/static/css/main.b6e50987.chunk.css",
-    "main.js": "/react-app/static/js/main.86d9d4ba.chunk.js",
-    "main.js.map": "/react-app/static/js/main.86d9d4ba.chunk.js.map",
-    "runtime-main.js": "/react-app/static/js/runtime-main.3bcf73ff.js",
-    "runtime-main.js.map": "/react-app/static/js/runtime-main.3bcf73ff.js.map",
-    "static/css/2.383c0125.chunk.css": "/react-app/static/css/2.383c0125.chunk.css",
-    "static/js/2.85438c9c.chunk.js": "/react-app/static/js/2.85438c9c.chunk.js",
-    "static/js/2.85438c9c.chunk.js.map": "/react-app/static/js/2.85438c9c.chunk.js.map",
-    "static/js/3.3a4da66a.chunk.js": "/react-app/static/js/3.3a4da66a.chunk.js",
-    "static/js/3.3a4da66a.chunk.js.map": "/react-app/static/js/3.3a4da66a.chunk.js.map",
-    "index.html": "/react-app/index.html",
-    "static/css/2.383c0125.chunk.css.map": "/react-app/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.b6e50987.chunk.css.map": "/react-app/static/css/main.b6e50987.chunk.css.map",
-    "static/js/2.85438c9c.chunk.js.LICENSE.txt": "/react-app/static/js/2.85438c9c.chunk.js.LICENSE.txt",
-    "static/media/MahmoudGaber _ LinkedIn.bc86565d.png": "/react-app/static/media/MahmoudGaber _ LinkedIn.bc86565d.png"
+    "main.css": "/React-app-ITI/static/css/main.b6e50987.chunk.css",
+    "main.js": "/React-app-ITI/static/js/main.4eed111a.chunk.js",
+    "main.js.map": "/React-app-ITI/static/js/main.4eed111a.chunk.js.map",
+    "runtime-main.js": "/React-app-ITI/static/js/runtime-main.e9667180.js",
+    "runtime-main.js.map": "/React-app-ITI/static/js/runtime-main.e9667180.js.map",
+    "static/css/2.383c0125.chunk.css": "/React-app-ITI/static/css/2.383c0125.chunk.css",
+    "static/js/2.eb52ee54.chunk.js": "/React-app-ITI/static/js/2.eb52ee54.chunk.js",
+    "static/js/2.eb52ee54.chunk.js.map": "/React-app-ITI/static/js/2.eb52ee54.chunk.js.map",
+    "static/js/3.3a4da66a.chunk.js": "/React-app-ITI/static/js/3.3a4da66a.chunk.js",
+    "static/js/3.3a4da66a.chunk.js.map": "/React-app-ITI/static/js/3.3a4da66a.chunk.js.map",
+    "index.html": "/React-app-ITI/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/React-app-ITI/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.b6e50987.chunk.css.map": "/React-app-ITI/static/css/main.b6e50987.chunk.css.map",
+    "static/js/2.eb52ee54.chunk.js.LICENSE.txt": "/React-app-ITI/static/js/2.eb52ee54.chunk.js.LICENSE.txt",
+    "static/media/MahmoudGaber _ LinkedIn.bc86565d.png": "/React-app-ITI/static/media/MahmoudGaber _ LinkedIn.bc86565d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3bcf73ff.js",
+    "static/js/runtime-main.e9667180.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.85438c9c.chunk.js",
+    "static/js/2.eb52ee54.chunk.js",
     "static/css/main.b6e50987.chunk.css",
-    "static/js/main.86d9d4ba.chunk.js"
+    "static/js/main.4eed111a.chunk.js"
   ]
 }

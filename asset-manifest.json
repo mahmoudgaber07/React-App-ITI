@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-app-ITI/static/css/main.ff254411.chunk.css",
+    "main.css": "/React-app-ITI/static/css/main.b4589a86.chunk.css",
     "main.js": "/React-app-ITI/static/js/main.daffa8df.chunk.js",
     "main.js.map": "/React-app-ITI/static/js/main.daffa8df.chunk.js.map",
     "runtime-main.js": "/React-app-ITI/static/js/runtime-main.5d9e9b48.js",
@@ -12,7 +12,7 @@
     "static/js/3.41651968.chunk.js.map": "/React-app-ITI/static/js/3.41651968.chunk.js.map",
     "index.html": "/React-app-ITI/index.html",
     "static/css/2.cbedb215.chunk.css.map": "/React-app-ITI/static/css/2.cbedb215.chunk.css.map",
-    "static/css/main.ff254411.chunk.css.map": "/React-app-ITI/static/css/main.ff254411.chunk.css.map",
+    "static/css/main.b4589a86.chunk.css.map": "/React-app-ITI/static/css/main.b4589a86.chunk.css.map",
     "static/js/2.3a7c0897.chunk.js.LICENSE.txt": "/React-app-ITI/static/js/2.3a7c0897.chunk.js.LICENSE.txt",
     "static/media/MahmoudGaber _ LinkedIn.bc86565d.png": "/React-app-ITI/static/media/MahmoudGaber _ LinkedIn.bc86565d.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.5d9e9b48.js",
     "static/css/2.cbedb215.chunk.css",
     "static/js/2.3a7c0897.chunk.js",
-    "static/css/main.ff254411.chunk.css",
+    "static/css/main.b4589a86.chunk.css",
     "static/js/main.daffa8df.chunk.js"
   ]
 }

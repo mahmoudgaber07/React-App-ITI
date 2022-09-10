@@ -1,6 +1,6 @@
 //all reducer
-import { countReducer } from "./Reducers/countRedux";
-import { todoReducer } from "./Reducers/todoRedux";
+import { countReducer } from "./Reducers/countReducer";
+import { todoReducer } from "./Reducers/todoReducer";
 import { combineReducers } from 'redux';
 import { Loadereducers } from "./Reducers/loaderReducer";
 const reducers = combineReducers({

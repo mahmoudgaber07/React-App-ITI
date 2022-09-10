@@ -3,7 +3,6 @@ const INITIAL_VALUE = {
     isLoading: false,
 }
 export const Loadereducers = (state = INITIAL_VALUE, action) => { 
-    //check action type 
     switch (action.type) {
         case 'Set_Loader':
             return {         

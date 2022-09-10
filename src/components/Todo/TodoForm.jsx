@@ -1,14 +1,18 @@
 import { useState } from "react";
 
 const TodoForm = ({ addTodo }) => {
+  const [id, setId] = useState(0);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
   const handelSubmission = (e) => {
     e.preventDefault();
-    addTodo({ title, content });
-    setTitle("");
-    setContent("");
+    if (title.length > 0 && content.length > 0) {
+      addTodo({ id,title, content });
+      setTitle("");
+      setContent("");
+      setId(id + 1);
+    }
   };
   return (
     <div className="todo-form container">

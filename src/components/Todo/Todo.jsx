@@ -1,7 +1,7 @@
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import { useDispatch, useSelector } from "react-redux"
-import { addTodoAction } from "../../Redux/todoRedux"
+import { addTodoAction,delTodoAction } from "../../Redux/Actions/todoActions"
 
 const Todo = () => {
   //state from redux
@@ -12,11 +12,14 @@ const Todo = () => {
   const addTodo = (task) => {
       dispatch(addTodoAction(task))
   }
+  const delTodo = (task) => {
+      dispatch(delTodoAction(task))
+  }
   return (
     <div className="container">
       <div className="todo">
       <TodoForm addTodo={addTodo}/>
-        <TodoList todos={todosState}/>
+        <TodoList todos={todosState} delTodo={delTodo} />
       </div>
     </div>
   );

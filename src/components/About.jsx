@@ -1,7 +1,7 @@
 import Image from "../assets/img/MahmoudGaber _ LinkedIn.png";
 const About = () => {
   return (
-    <div className="container mb-5">
+    <div className="container mb-5 noselect">
       <div className="row align-items-lg-center">
         <h2>Mahmoud Gaber</h2>
         <div className="col-md-5 col-sm-12">

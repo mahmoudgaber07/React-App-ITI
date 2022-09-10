@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { incrementCount,decrementCount } from '../../../Redux/countRedux';
+import { incrementCount,decrementCount } from '../../../Redux/Actions/countActions';
 
 const CountAction = () => {
         //(useDispatch) invoke action

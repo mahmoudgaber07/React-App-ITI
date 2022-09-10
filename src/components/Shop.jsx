@@ -1,44 +1,79 @@
-import { useState,useEffect } from "react"
-import { Link } from "react-router-dom"
-
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import axiosinstance from "../environment/axiosinstance";
 const Shop = () => {
-    const [products, setProducts] = useState([])
-    useEffect(() => {
-        fetchProducts();
-    }, [])
-    
-    const fetchProducts = () => {
-        fetch('https://fakestoreapi.com/products')
-        .then(res=>res.json())
-        .then(json=>setProducts(json))
-    }
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
-    return (
-        <div className="shop container px-4 px-lg-5 mt-5">
-            <h1 className="shop-header mb-5">Shop</h1>
-            <section className="row flex-wrap justify-content-center">
-                {products.map((product) => {
-                        return (
-                        <Link to={`/shop/${product.id}`} key={product.id} className="col-lg-4 col-md-6 col-sm-12 border border-2 border-light p-3">
-                                <div className="card h-100">
-                                    <div className="bg-light">
-                                        <img src={product.image} className="card-img-top img-fluid img-thumbnail w-50 m-auto" alt="product-img" />
-                                    </div>
-    
-                                    <div className="card-body p-4">
-                                        <div className="card-text-center my-2">Title: {product.title}</div>
-                                    </div>
-    
-                                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div className="border border-5 p-2">Price: {product.price}</div>
-                                    </div>
-                                </div>
-                        </Link>
-                        )
-            })}
-            </section>
-        </div>
-    )
-}
+  const fetchProducts = () => {
+    axiosinstance
+      .get("/products")
+      .then((res) => setProducts(res.data))
+      .catch((err) => console.log(err));
+  };
+  return (
+    <div className="container-fluid min-vh-100">
+      <div className="row">
+        {products.map((product) => {
+          return (
+            <Link
+              to={`/shop/${product.id}`}
+              key={product.id}
+              className="card col-md-3"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="mt-2">
+                  <h4
+                    className="text-uppercase text-nowrap bd-highlight overflow-hidden"
+                    style={{ width: "15rem" }}
+                  >
+                    {product.title}
+                  </h4>
+                  <div className="mt-5 overflow-hidden">
+                    <h1 className="main-heading mt-0">{product.category}</h1>
+                    <div className="d-flex flex-row justify-content-between">
+                      <div className="ratings">
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                      </div>
+                    </div>
+                    <h6 className="text-muted ml-1 d-block">
+                      <p>{product.rating.rate}</p>
+                    </h6>
+                    <h6 className="text-muted ml-1 text-center">
+                      Quantity: {product.rating.count}
+                    </h6>
+                  </div>
+                </div>
+                <div className="image">
+                  <img
+                    src={product.image}
+                    style={{ width: "100%" }}
+                    alt="productimage"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+              <div className="d-flex justify-content-between align-items-center mt-2 mb-2">
+                <span>Available colors</span>
+                <div className="colors d-flex">
+                  <span></span> <span></span> <span></span> <span></span>
+                </div>
+              </div>
+              <p> A great option weather you are at office or at home. </p>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-export default Shop
+export default Shop;

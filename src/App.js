@@ -6,13 +6,16 @@ import Shop from './components/Shop'
 import Product from './components/Product'
 import Todo from './components/Todo/Todo'
 import Counter from './components/Counter/Counter'
-import Footer from './components/Footer';
-
+import Footer from './components/Footer'
+import Loader from './components/Loader/Loader'
+import { useSelector } from 'react-redux';
 const App = () => {
+  let isLoading = useSelector(state => state.loadRed.isLoading);
   return (
     <Router>
       <main className="App min-vh-100">
         <Nav />
+        {isLoading && <Loader />}
         <Routes>
           <Route path="/" element={<About/>} exact/>
           <Route path="/about" element={<About/>} />

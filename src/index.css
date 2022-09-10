@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.ratings {
+  color: orange
+}
+.colors span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  margin-right: 6px
+}
+
+.colors span:nth-child(1) {
+  background-color: red
+}
+
+.colors span:nth-child(2) {
+  background-color: blue
+}
+
+.colors span:nth-child(3) {
+  background-color: yellow
+}
+
+.colors span:nth-child(4) {
+  background-color: purple
+}

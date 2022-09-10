@@ -1,9 +1,9 @@
 import {Link} from 'react-router-dom'
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5 sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5 sticky-top noselect">
       <div className="container-fluid">
-        <h3 className="text-white ps-5">React-Portfolio</h3>
+        <Link to={'/'} className="text-decoration-none"><h3 className="text-white ps-5">React-Portfolio</h3></Link>
         <button
           className="navbar-toggler"
           type="button"

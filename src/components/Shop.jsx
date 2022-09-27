@@ -12,7 +12,7 @@ const Shop = () => {
   const fetchProducts = () => {
     axiosinstance
       .get("/products")
-      .then((res) => setProducts(res.data))
+      .then((res) => setProducts(res.data.products))
       .catch((err) => console.log(err));
   };
   return (
@@ -54,7 +54,7 @@ const Shop = () => {
                 </div>
                 <div className="image">
                   <img
-                    src={product.image}
+                    src={product.thumbnail}
                     style={{ width: "100%" }}
                     alt="productimage"
                     className="img-fluid"

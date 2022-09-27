@@ -2,7 +2,7 @@ import axios from 'axios';
 import  store  from '../Redux/store';
 import { setLoader } from '../Redux/Actions/loaderActions';
 export const axiosinstance = axios.create({
-    baseURL: 'https://fakestoreapi.com', 
+    baseURL: 'https://dummyjson.com', 
 });
 
 

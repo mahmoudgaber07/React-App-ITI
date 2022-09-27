@@ -30,7 +30,7 @@ const Product = () => {
         <div className="container min-vh-100" key={prod.id}>
           <div className="product text-center">
             <div className="img w-50 m-auto">
-              <img src={prod.image} className="w-25 img-fluid" alt="poduct-img" />
+              <img src={prod.thumbnail} className="w-50 img-fluid" alt="poduct-img" />
             </div>
             <h2 className="my-3">{prod.title}</h2>
             <p className="text-muted">{prod.category}</p>
